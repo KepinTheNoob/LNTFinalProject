@@ -19,17 +19,22 @@
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
                         <div class="form-group">
+                            <h5>Nama</h5>
                             <input type="text" name="name" class="form-control" placeholder="Nama Lengkap" required minlength="3" maxlength="40">
                         </div>
                         <div class="form-group">
+                            <h5>Email</h5>
                             <input type="email" name="email" class="form-control" placeholder="Email (contoh: nama@gmail.com)" required>
                         </div>
                         <div class="form-group">
+                            <h5>Password</h5>
                             <input type="password" name="password" class="form-control" placeholder="Password (6-12)" required minlength="6" maxlength="12">
                         </div>
                         <div class="form-group">
+                            <h5>Nomor HP</h5>
                             <input type="text" name="handphone" class="form-control" placeholder="Nomor Handphone (contoh: 0812xxxxxxxx)" required pattern="08[0-9]{9,}">
                         </div>
+                        <br>
                         <button type="submit" class="btn btn-primary btn-block">Register</button>
                     </form>
                 </div>

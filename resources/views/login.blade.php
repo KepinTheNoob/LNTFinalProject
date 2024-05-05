@@ -19,11 +19,13 @@
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="form-group">
+                            <h5>Email</h5>
                             <input type="email" name="email" class="form-control" placeholder="Email" required>
                         </div>
                         <div class="form-group">
+                            <h5>Password</h5>
                             <input type="password" name="password" class="form-control" placeholder="Password" required>
-                        </div>
+                        </div><br>
                         <button type="submit" class="btn btn-primary btn-block">Login</button>
                     </form>
                 </div>

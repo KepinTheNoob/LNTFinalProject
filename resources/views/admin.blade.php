@@ -19,11 +19,13 @@
                     <form method="POST" action="{{ route('admin') }}">
                         @csrf
                         <div class="form-group">
+                            <h5>Admin ID</h5>
                             <input type="text" name="admin_id" class="form-control" placeholder="ID Admin" required>
                         </div>
                         <div class="form-group">
+                            <h5>Password</h5>
                             <input type="password" name="password" class="form-control" placeholder="Password (6-12)" required minlength="6" maxlength="12">
-                        </div>
+                        </div><br>
                         <button type="submit" class="btn btn-primary btn-block">Login as Admin</button>
                     </form>
                 </div>
